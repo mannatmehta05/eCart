@@ -15,7 +15,7 @@ const Header = ({ cart, data, setData }) => {
   }
   const fetchSeacrh = async (value) => {
     try {
-      const result = await axios.get(`${baseUrl}product/getAllproduct?field=name&search=${value ? search : value}`)
+      const result = await axios.get(`${baseUrl}product/getAllproduct?limit=7&field=name&search=${value ? search : value}`)
       setData(result.data.data.allProduct)
       console.log(result.data.data.allProduct)
     }
