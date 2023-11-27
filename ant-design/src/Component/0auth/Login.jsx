@@ -23,7 +23,7 @@ const Login = () => {
                const result = await axios.post(`${baseUrl}user/login`, input)
                console.log(result)
                localStorage.setItem("accessToken", result.data.data.accessToken);
-               navigate("/dashboard")
+               navigate("/")
           }
           catch (e) {
                toast.error(e.response.data.message)

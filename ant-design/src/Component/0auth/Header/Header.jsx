@@ -57,10 +57,3 @@ const Header = ({ cart, data, setData }) => {
 export default Header
 
 
-
-
-
-
-
-
-
